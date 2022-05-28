@@ -1,0 +1,211 @@
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+    height: 70px;
+    margin: 0 auto;
+}
+
+.app__navbar label {
+    position: relative;
+    width: 30%;
+}
+
+.app__navbar label:before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    background: url("../../Images/Search.svg") center / contain no-repeat;
+}
+
+input {
+    padding: 7px 10px 7px 40px;
+    border-radius: 10px;
+    background: var(--color-black2);
+    border: none;
+    width: 100%;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    line-height: 100%;
+    color: var(--color-white);
+}
+
+input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari/Edge */
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    line-height: 100%;
+    color: var(--color-white);
+}
+
+input::-ms-input-placeholder {
+    /* Microsoft Edge */
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    line-height: 100%;
+    color: var(--color-white);
+}
+
+input:-ms-input-placeholder {
+    /* IE 10+ */
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    line-height: 100%;
+    color: var(--color-white);
+}
+
+.app__navbar {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+}
+
+.app__navbar_list-items {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.app__navbar_list-items li {
+    list-style: none;
+    color: var(--color-grey3);
+}
+
+.app__navbar_list-items .active {
+    color: var(--color-white);
+}
+
+.app__navbar-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.app__smallscreen-navbar {
+    display: none;
+}
+
+.app__navbar-smallscreen_overlay {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--color-dark);
+    transition: .5s ease;
+    flex-direction: column;
+    z-index: 5;
+}
+
+.app__navbar_top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 28px 22px 15px 22px;
+}
+
+.app__minimal-logo {
+    display: none;
+}
+
+@media screen and (max-width: 1050px) {
+    .app__navbar {
+        padding-left: 9px;
+        padding-right: 9px;
+        height: 40px;
+    }
+    .app__logo {
+        display: none;
+    }
+    .app__minimal-logo {
+        display: block;
+    }
+    .app__navbar label {
+        position: relative;
+        width: auto;
+        flex: 1;
+    }
+    .app__navbar input {
+        line-height: 26px;
+        font-size: 10px;
+    }
+    .app__navbar input::-ms-input-placeholder {
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .app__navbar_list-items,
+    .app__navbar-buttons {
+        display: none;
+    }
+    .app__smallscreen-navbar {
+        display: flex;
+        flex-direction: column;
+    }
+    .app__navbar-smallscreen_list-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        margin-top: 12px;
+        gap: 15px;
+        margin-bottom: auto;
+    }
+    .app__navbar-smallscreen_list-items .heading {
+        font-size: 40px;
+        line-height: 65px;
+    }
+    .app__navbar-smallscreen_list-items li {
+        color: var(--color-grey3);
+    }
+    .app__navbar-smallscreen_list-items .active {
+        color: var(--color-white);
+    }
+    .app__navbar-smallscreen_buttons {
+        padding: 20px 27.5px 15px 27.5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    nav {
+        height: 140px;
+        gap: 60px;
+    }
+    .app__navbar {
+        gap: 40px;
+    }
+    .app__logo,
+    label,
+    input {
+        height: 64px;
+    }
+    input,
+    input::-webkit-input-placeholder {
+        font-size: 24px !important;
+    }
+    .app__navbar_list-items .semibold_paragraph-1 {
+        font-size: 32px;
+    }
+}

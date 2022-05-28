@@ -1,38 +1,130 @@
-.App {
-  text-align: center;
+.section__padding {
+    margin-top: 60px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app__wrapper {
+    padding-top: 40px;
+    padding-left: 1px;
+    padding-right: 1px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.divider {
+    width: 100%;
+    border: 1px solid var(--color-black1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.pointer {
+    cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.regular_paragraph-1 {
+    /* Paragraph 1 (Regular) */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    /* font-feature-settings: 'salt' on, 'liga' off; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.regular_paragraph-2 {
+    /* Paragraph 2 (Regular) */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.regular_paragraph-3 {
+    /* Paragraph 3 (Regular) */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.regular_paragraph-4 {
+    /* Paragraph 4 (Regular) */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+}
+
+.semibold_paragraph-1 {
+    /* Paragraph 1 (SemiBold) */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.semibold_paragraph-2 {
+    /* Paragraph 2 (SemiBold) */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.semibold_paragraph-3 {
+    /* Paragraph 3 (SemiBold) */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.semibold_paragraph-4 {
+    /* Paragraph 4 (SemiBold) */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 15px;
+}
+
+.heading-1 {
+    /* Heading 1 */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+}
+
+.heading-2 {
+    /* Heading 2 */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.heading-3 {
+    /* Heading 3 */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.button {
+    /* Button */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 9px 30px;
+    border-radius: 10px;
+    cursor: pointer;
 }

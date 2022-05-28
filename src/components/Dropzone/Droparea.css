@@ -1,0 +1,35 @@
+.app__drop-area_container {
+    width: 610px;
+    /* Black/1 */
+    background: var(--color-black1);
+    /* White */
+    border: 1px dashed var(--color-white);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.app__drop-area_container-dropzone {
+    gap: 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 47px;
+    margin-bottom: 31px;
+}
+
+.app__drop-area_container-dropzone div p {
+    text-align: center;
+}
+
+@media screen and (max-width:650px) {
+    .app__drop-area_container {
+        width: 100%;
+    }
+    .app__drop-area_container-dropzone h1 {
+        width: 65%;
+        text-align: center;
+    }
+}

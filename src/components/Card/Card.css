@@ -1,0 +1,87 @@
+.app__user-card {
+    cursor: pointer;
+    position: relative;
+    height: 200px;
+    width: 180px;
+    min-width: 180px;
+    border-radius: 20px;
+    background: var(--color-black3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.app__user-card_queue {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 33px;
+    width: 33px;
+    left: 11px;
+    top: 11px;
+    border-radius: 50%;
+    background: var(--color-red-violet);
+}
+
+.app__user-card_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 5px;
+    height: 137px;
+    width: 87px;
+}
+
+.app__user-card_profile {
+    width: 77px;
+    height: 77px;
+    position: relative;
+}
+
+.app__user-card_profile-photo {
+    border-radius: 50%;
+}
+
+.app__user-card_profile-tick {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 55px;
+    top: 62px;
+}
+
+@media screen and (max-width:500px) {
+    .app__user-card {
+        height: 165px;
+        min-width: 130px;
+        width: 130px;
+    }
+    .app__user-card_queue {
+        height: 24px;
+        width: 24px;
+        left: 6.11%;
+        right: 75.43%;
+        top: 5.5%;
+        bottom: 79.95%;
+    }
+    .app__user-card_container {
+        height: 125px;
+        width: 77px;
+        gap: 3px;
+    }
+    .app__user-card_container .semibold_paragraph-1 {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .app__user-card_container .regular_paragraph-1 {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+    }
+}

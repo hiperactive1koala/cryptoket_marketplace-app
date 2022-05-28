@@ -1,0 +1,48 @@
+.app__top-sellers {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    /* min-width: 500px; */
+    max-width: 64.25rem;
+    width: 95%;
+}
+
+.app__top-sellers_card-container {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1030px;
+    width: 100%;
+    position: relative;
+}
+
+.app__top-sellers_card {
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    gap: 22px;
+    padding: 0 1rem;
+}
+
+.app__top-sellers_card::-webkit-scrollbar {
+    display: none;
+}
+
+.app__top-sellers_arrows {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app__top-sellers_arrows img {
+    cursor: pointer;
+}

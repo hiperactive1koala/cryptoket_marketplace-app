@@ -1,0 +1,11 @@
+.custom_gradient-button {
+    background: var(--color-red-linear);
+    color: var(--color-white);
+    border: none;
+}
+
+.custom_border-gradient-color {
+    border: 1px solid;
+    color: var(--color-red-violet);
+    background: none;
+}

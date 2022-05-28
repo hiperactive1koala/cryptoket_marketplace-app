@@ -1,0 +1,53 @@
+.app__bids {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 62rem;
+    width: 100%;
+}
+
+.app__bids-searchbar {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    align-self: center;
+    gap: 20px;
+}
+
+.app__bids-searchbar select {
+    background-color: var(--color-black2);
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    padding: 8px 15px;
+    gap: 10px;
+    max-width: 233px;
+    width: 95%;
+}
+
+.app__bids .none {
+    display: none;
+}
+
+.app__bids h1,
+.app__bids p {
+    margin-left: 11px;
+}
+
+.app__bids-gallery {
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(233px, 233px));
+}
+
+@media screen and (max-width:510px) and (min-width:370px) {
+    /* .app__bids h1 {
+        margin-left: 10px;
+    } */
+    .app__bids-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(145px, 145px));
+    }
+}
