@@ -14,10 +14,10 @@ const App = () => {
 	<div className='app__wrapper'>
 		<Navbar activePage={useLocation().pathname}/>
 		<Routes>
-			<Route exact path="/" element={<Explore/>}/>
 			<Route path="/user-profile" element={<User/>}/>
 			<Route path="/item" element={<Item/>}/>
 			<Route path="/create" element={<Create/>}/>
+			<Route  path="/" element={<Explore/>}/>
 		</Routes>
 	</div>
   )
