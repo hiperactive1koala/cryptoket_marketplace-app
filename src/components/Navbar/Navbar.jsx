@@ -24,8 +24,8 @@ const Navbar = ({activePage}) => {
             </label>
             <ul className="app__navbar_list-items">
               <li className={`semibold_paragraph-1 ${active==='/' ? "active" : ""}`}><Link to="/" onClick={() =>setActive('/')}>Explore</Link></li>
-              <li className={`semibold_paragraph-1 ${active==='MyItems' ? "active" : ""}`}><Link to="/something" onClick={() =>setActive('/something')}>My Items</Link></li>
-              <li className={`semibold_paragraph-1 ${active==='Following' ? "active" : ""}`}><Link to="/following"onClick={() =>setActive('/following')}>Following</Link></li>
+              <li className={`semibold_paragraph-1 ${active==='item' ? "active" : ""}`}><Link to="/item" onClick={() =>setActive('item')}>My Items</Link></li>
+              <li className={`semibold_paragraph-1 ${active==='user-profile' ? "active" : ""}`}><Link to="/user-profile"onClick={() =>setActive('user-profile')}>Following</Link></li>
             </ul>
             <div className="app__navbar-buttons">
               <Button type={'filled'} text='Create' onPress={()=> window.open('/create','_self')}/>
