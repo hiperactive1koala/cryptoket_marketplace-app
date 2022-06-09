@@ -1,5 +1,6 @@
-import React, {useState} from 'react'
+import React, { useState , useContext } from 'react'
 
+import  {  Context  }  from  "../../Context/Context";
 
 import Button from '../../components/Button/Button'
 import Footer from '../../components/Footer/Footer'
@@ -11,15 +12,18 @@ import Checkout from '../../components/Checkout/Checkout'
 
 
 const Item = () => {
+
+    const { toggleTrue } =useContext(Context);
+
     const dummyData={ details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
                       offers: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
                       history: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"
                     }
     const [spell, setSpell] = useState("details")
-    const [checkOut, setCheckOut] = useState(false)
+    
     return (
     <div className="app__item">
-        <Checkout isVisible={checkOut}/>
+        <Checkout/>
         <div className="app__item-container">
             <div className="app__item-container_img">
                 <img src={Nft} alt="" />
@@ -58,7 +62,7 @@ const Item = () => {
            
                     <p className="regular_paragraph-1">{dummyData[spell]}</p>
                     <div className="app__item-info_buttons">
-                        <Button type={'filled'} text='Buy for 4.5 ETH' height={45} width={200} paddingLR={12} onPress={()=> setCheckOut(true)} />
+                        <Button type={'filled'} text='Buy for 4.5 ETH' height={45} width={200} paddingLR={12} onPress={()=> toggleTrue()} />
                         <Button text='Make Offer' height={45} width={200} paddingLR={22} />
                     </div>
        

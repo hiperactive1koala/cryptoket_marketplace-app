@@ -1,4 +1,6 @@
-import React, {useState} from 'react'
+import React, { useState , useContext } from 'react'
+
+import  {  Context  }  from  "../../Context/Context";
 
 import Nft from '../../Images/original_nft.png'
 import Button from '../Button/Button'
@@ -7,13 +9,14 @@ import TW from '../../Images/twitter.svg'
 import TL from '../../Images/telegram.svg'
 import './Checkout.css'
 
-const Checkout = ({isVisible = false}) => {
+const Checkout = () => {
+    const { checkOut, toggleFalse } = useContext(Context);
     const [complete, setComplete] = useState(false)
 
-    if(isVisible){
+    if(checkOut){
         return (
       
-            <div className="app__item-checkout-container">
+            <div className="app__item-checkout-container" onClick={()=> toggleFalse()}>
                 <div className="app__item-checkout">
                     {complete? <h1 className="heading-2">Payment Successful</h1> :<h1 className="heading-2">Check Out</h1>}
                     
@@ -56,7 +59,7 @@ const Checkout = ({isVisible = false}) => {
                                 </div>:
                                  <div className="app__item-checkout_buttons">
                                     <Button type={'filled'} text='Checkout' width={140} height={40}  onPress={()=>setComplete(true)} />
-                                    <Button text='Cancel' width={140} height={40} onPress={()=> window.open('/item', "_self")} />
+                                    <Button text='Cancel' width={140} height={40} onPress={()=> toggleFalse()} />
                                 </div>
                                     }
                 </div>
